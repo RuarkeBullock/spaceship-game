@@ -112,7 +112,7 @@ namespace spaceship_game
             if (randGen.Next(0, 101) < 15)  // Reduced frequency of ball creation
             {
                 int y = randGen.Next(0, this.Height - 200);
-                int size = randGen.Next(10, 30);  // Random size 
+                int size = randGen.Next(5, 15);  // Random size 
                 int speed = randGen.Next(5, 10);  // Random speed 
                 balls.Add(new Rectangle(0, y, size, size));
                 ballSpeeds.Add(speed);
@@ -121,7 +121,7 @@ namespace spaceship_game
             else if (randGen.Next(0, 101) < 15)
             {
                 int y = randGen.Next(0, this.Height);
-                int size = randGen.Next(10, 30);  // Random size 
+                int size = randGen.Next(5, 15);  // Random size 
                 int speed = randGen.Next(5, 10);  // Random speed 
                 balls.Add(new Rectangle(this.Width, y, size, size));  // Ball starts from right
                 ballSpeeds.Add(-speed);
